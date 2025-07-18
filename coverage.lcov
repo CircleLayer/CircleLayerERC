@@ -1,0 +1,129 @@
+Compiling 32 files with Solc 0.8.28
+Solc 0.8.28 finished in 2.66s
+Compiler run successful with warnings:
+Warning (2018): Function state mutability can be restricted to view
+   --> test/CircleLayer.t.sol:400:5:
+    |
+400 |     function test_FeeCalculation_TradingNotEnabled() public {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to view
+    --> test/CircleLayer.t.sol:1012:5:
+     |
+1012 |     function test_Invariant_MaxSupplyNeverExceeded() public {
+     |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to view
+    --> test/CircleLayer.t.sol:1034:5:
+     |
+1034 |     function test_Invariant_TreasuryAddressesNeverZero() public {
+     |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Warning (2018): Function state mutability can be restricted to view
+    --> test/CircleLayer.t.sol:2152:5:
+     |
+2152 |     function test_UltraCoverage_EdgeCaseNumbers() public {
+     |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Analysing contracts...
+Running tests...
+
+Ran 88 tests for test/CircleLayer.t.sol:CircleLayerTest
+[PASS] testFuzz_Approve(uint256) (runs: 1001, μ: 41913, ~: 42152)
+[PASS] testFuzz_FeeCalculation(uint256) (runs: 1000, μ: 64107, ~: 64836)
+[PASS] testFuzz_Transfer(uint256) (runs: 1001, μ: 77983, ~: 78894)
+[PASS] test_AntiBotProtection_DisabledAfter180Seconds() (gas: 517341)
+[PASS] test_AntiBotProtection_MaxBuyTxsPerBlock() (gas: 6558087)
+[PASS] test_AntiBotProtection_MaxBuyTxsPerBlockPerOrigin() (gas: 533792)
+[PASS] test_Boundary_MaximumTransferAmount() (gas: 75038)
+[PASS] test_Boundary_MinimumTransferAmount() (gas: 75417)
+[PASS] test_Boundary_TimeBoundaries() (gas: 92393)
+[PASS] test_Coverage_100_RaiseAmountFee_AllBranches() (gas: 64509)
+[PASS] test_Coverage_100_SellAfterCapReached() (gas: 64472)
+[PASS] test_Coverage_100_SimpleCheck() (gas: 20609)
+[PASS] test_Coverage_100_TreasuryShares_EqualSplit() (gas: 185004)
+[PASS] test_Coverage_100_TreasuryShares_ZeroCase() (gas: 184919)
+[PASS] test_Coverage_AntiBotExactBoundaries() (gas: 731312)
+[PASS] test_Coverage_Branch_6Path1() (gas: 5677413)
+[PASS] test_Coverage_CompleteFeeBranches() (gas: 103327)
+[PASS] test_Coverage_ETHTransferEdgeCases() (gas: 770343)
+[PASS] test_Coverage_ETHTransfer_ZeroShares() (gas: 770320)
+[PASS] test_Coverage_EdgeCaseTransfers() (gas: 102012)
+[PASS] test_Coverage_ErrorConditions() (gas: 102573)
+[PASS] test_Coverage_MaxTransactionLimits() (gas: 6126397)
+[PASS] test_Coverage_MaxWalletBoundaryConditions() (gas: 110867)
+[PASS] test_Coverage_MissingRaiseAmountBranches() (gas: 12540)
+[PASS] test_Coverage_RaiseAmountBranches_Complete() (gas: 72911)
+[PASS] test_Coverage_RaiseAmountFeeCalculation_300Ether() (gas: 63483)
+[PASS] test_Coverage_RaiseAmountFeeScenarios() (gas: 422185)
+[PASS] test_Coverage_SetTreasury_ByOwnerOnly() (gas: 184942)
+[PASS] test_Coverage_SpecificBranchConditions() (gas: 182759)
+[PASS] test_Coverage_SwapEarlyReturns() (gas: 97664)
+[PASS] test_Coverage_SwapTokensForEth_AllBranches() (gas: 688691)
+[PASS] test_Coverage_SwapTokensForEth_EarlyReturn_TimeTooEarly() (gas: 597178)
+[PASS] test_Coverage_SwapTokensForEth_EarlyReturn_ZeroTokens() (gas: 507056)
+[PASS] test_Coverage_SwapTokensForEth_TokenAmountLimiting() (gas: 749032)
+[PASS] test_Coverage_TreasuryDistributionEdgeCases() (gas: 152989)
+[PASS] test_Coverage_UnusedBranches() (gas: 31603)
+[PASS] test_Coverage_ZeroTokenAmountPath() (gas: 102886)
+[PASS] test_DeploymentScript() (gas: 10910198)
+Logs:
+  CircleLayer deployed to: 0xe539FFF59EB1C136fabb1bc45bE9D441ec0F3899
+  LP Pair address: 0xFA17acC1a3C813b20f8390a2C50c48243cEc9A91
+  Treasury1: 0x693dD90f4121574898910799665BB9664d7CE96C
+  Treasury2: 0x693dD90f4121574898910799665BB9664d7CE96C
+
+[PASS] test_Deployment_ExclusionsSet() (gas: 60889)
+[PASS] test_Deployment_InitialState() (gas: 55134)
+[PASS] test_Deployment_RouterApprovals() (gas: 21585)
+[PASS] test_EdgeCase_FailedETHTransfer() (gas: 865105)
+[PASS] test_EdgeCase_ReceiveEther() (gas: 17435)
+[PASS] test_EdgeCase_TransferToSelf() (gas: 26559)
+[PASS] test_EdgeCase_TransferZeroAmount() (gas: 29011)
+[PASS] test_FeeCalculation_300To480Seconds() (gas: 61793)
+[PASS] test_FeeCalculation_480To900Seconds() (gas: 61839)
+[PASS] test_FeeCalculation_60To300Seconds() (gas: 61744)
+[PASS] test_FeeCalculation_900To3600Seconds() (gas: 61863)
+[PASS] test_FeeCalculation_After3600Seconds_RaiseAmountBased() (gas: 63481)
+[PASS] test_FeeCalculation_First60Seconds() (gas: 61069)
+[PASS] test_FeeCalculation_TradingNotEnabled() (gas: 12087)
+[PASS] test_FeeExemption_SetAddressExcludedFromFees() (gas: 32476)
+[PASS] test_FeeExemption_SetAddressExcludedFromFees_RevertUnauthorized() (gas: 17024)
+[PASS] test_FeeExemption_SetExcludedFromFees() (gas: 34364)
+[PASS] test_FeeExemption_SetExcludedFromMaxWallet() (gas: 34261)
+[PASS] test_Integration_FullTradingCycle() (gas: 876441)
+[PASS] test_Invariant_FeesBpsNeverExceedMaximum() (gas: 146918)
+[PASS] test_Invariant_MaxSupplyNeverExceeded() (gas: 12888)
+[PASS] test_Invariant_PairAddressNeverChanges() (gas: 98042)
+[PASS] test_Invariant_TotalSupplyNeverChanges() (gas: 134570)
+[PASS] test_Invariant_TreasuryAddressesNeverZero() (gas: 14973)
+[PASS] test_Lifecycle_CompleteTokenLifecycle() (gas: 776446)
+[PASS] test_MaxWallet_ExcludedAddress() (gas: 465772)
+[PASS] test_MaxWallet_RevertExceedsLimit() (gas: 71091)
+[PASS] test_Ownership_RevertUnauthorized() (gas: 27704)
+[PASS] test_Ownership_TransferOwnership() (gas: 25671)
+[PASS] test_TokenSwapping_EarlySwapPrevention() (gas: 488897)
+[PASS] test_TokenSwapping_SwapTokensForEth() (gas: 771298)
+[PASS] test_Trading_BuyWithFees() (gas: 452159)
+[PASS] test_Trading_EnableTrading() (gas: 61182)
+[PASS] test_Trading_EnableTrading_RevertAlreadyEnabled() (gas: 59501)
+[PASS] test_Trading_EnableTrading_RevertUnauthorized() (gas: 14924)
+[PASS] test_Trading_RevertTradingNotEnabled() (gas: 64830)
+[PASS] test_Trading_SellWithFees() (gas: 774715)
+[PASS] test_Trading_TransferFromExcluded() (gas: 75459)
+[PASS] test_Treasury_SetTreasury1() (gas: 70757)
+[PASS] test_Treasury_SetTreasury1_RevertUnauthorized() (gas: 16862)
+[PASS] test_Treasury_SetTreasury1_RevertZeroAddress() (gas: 12418)
+[PASS] test_Treasury_SetTreasury2() (gas: 70688)
+[PASS] test_Treasury_SetTreasury2_RevertUnauthorized() (gas: 16774)
+[PASS] test_Treasury_SetTreasury2_RevertZeroAddress() (gas: 12373)
+[PASS] test_UltraCoverage_AllPossibleFeeValues() (gas: 96376)
+[PASS] test_UltraCoverage_AllTimeBoundaries() (gas: 94495)
+[PASS] test_UltraCoverage_AntiBotBoundaryExactly180Seconds() (gas: 69259)
+[PASS] test_UltraCoverage_EdgeCaseNumbers() (gas: 15945)
+[PASS] test_UltraCoverage_MaxWalletPreciseCalculations() (gas: 86935)
+[PASS] test_UltraCoverage_RaiseAmountEdgeCases() (gas: 76004)
+Suite result: ok. 88 passed; 0 failed; 0 skipped; finished in 4.07s (6.93s CPU time)
+
+Ran 1 test suite in 4.07s (4.07s CPU time): 88 tests passed, 0 failed, 0 skipped (88 total tests)
+Wrote LCOV report.

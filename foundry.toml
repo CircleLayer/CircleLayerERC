@@ -1,0 +1,59 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+remappings = [
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "@uniswap/v2-core/=lib/v2-core/",
+    "@uniswap/v2-periphery/=lib/v2-periphery/",
+    "forge-std/=lib/forge-std/src/"
+]
+
+# Compiler settings
+solc = "0.8.28"
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+
+# Test settings
+verbosity = 2
+fuzz = { runs = 1000 }
+invariant = { runs = 256, depth = 15, fail_on_revert = true }
+
+# Gas reporting
+gas_reports = ["*"]
+gas_price = 20_000_000_000  # 20 gwei
+
+# Fork settings for testing
+[profile.fork]
+fork_url = "${MAINNET_RPC_URL}"
+fork_block_number = 18500000  # Recent block with good liquidity
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 200
+
+# Test profile with paris EVM
+[profile.test]
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+
+# Deployment profile with paris EVM
+[profile.deploy]
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+
+# RPC URLs
+[rpc_endpoints]
+mainnet = "${MAINNET_RPC_URL}"
+sepolia = "${SEPOLIA_RPC_URL}"
+localhost = "http://127.0.0.1:8545"
+
+# Etherscan API keys
+[etherscan]
+mainnet = { key = "${ETHERSCAN_API_KEY}" }
+sepolia = { key = "${ETHERSCAN_API_KEY}" } 

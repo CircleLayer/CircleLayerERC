@@ -1,0 +1,91 @@
+# Foundry
+cache/
+out/
+broadcast/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables & Secrets (CRITICAL - DO NOT COMMIT)
+.env
+.env.*
+!.env.example
+!env.template
+*.key
+*_KEY
+*_SECRET
+*_TOKEN
+private.json
+secrets.json
+
+# Keep template files
+!env.template
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-workspace
+.sublime-project
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Coverage & Reports
+coverage/
+coverage-reports/
+lcov.info
+.nyc_output
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Build artifacts
+artifacts/
+typechain/
+typechain-types/
+dist/
+build/
+
+# Hardhat (legacy)
+cache/
+artifacts/
+
+# Security & Private Keys (EXTRA PROTECTION)
+*.pem
+*.p12
+*.key
+*.keystore
+mnemonic.txt
+seed.txt
+wallet.json
+
+# Deployment artifacts (may contain sensitive data)
+deployments/*/
+!deployments/*/contracts/
+scripts/deploy/*.json
+!scripts/deploy/*.example.json 
