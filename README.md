@@ -34,7 +34,7 @@
 
 ### 🛡️ **LIQUIDITY PERMANENTLY LOCKED**
 
-<img src="https://app.uncx.network/static/media/unicrypt-logo.7e90a78c.svg" alt="UNCX Network" width="200"/>
+<img src="https://app.uncx.network/favicon.ico" alt="UNCX Network" width="64"/>
 
 **🔐 Locked for 12 Months on UNCX Network**
 
@@ -125,7 +125,7 @@ graph TD
 | Component | Address |
 |-----------|---------|
 | **CLAYER Token** | `0x7b5d6a651b5ea2049489123c5959b3d3cdfeee57` |
-| **Uniswap V2 Pair** | `[Auto-generated on deployment]` |
+| **Uniswap V2 Pair** | `0xbEf196EF984C4fDA4d1DcA40801B3173Aec2ADaC` |
 | **Treasury 1** | `0x8e26678c8811C2c04982928fe3148cBCBb435ad8` |
 | **Treasury 2** | `0x9b2522710450a26719A09753A0534B0c33682Fe4` |
 
